@@ -37,11 +37,11 @@ if st.button("🎮 Play"):
         st.info("🤝 It's a draw!")
 
     elif (
-        (player_choice == "👊" and computer_choice == "Scissors")
+        (player_choice == "👊" and computer_choice == "✌️")
         or
-        (player_choice == "✋" and computer_choice == "Rock")
+        (player_choice == "✋" and computer_choice == "👊")
         or
-        (player_choice == "✌️" and computer_choice == "Paper")
+        (player_choice == "✌️" and computer_choice == "✋")
     ):
         st.success("🎉 You win!")
         st.session_state.player_score += 1
