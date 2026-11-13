@@ -38,7 +38,7 @@ if st.button("🎮 Play"):
     # Flip through random moves, getting slower each time
     for i in range(20):
         flicker = random.choice(choices)
-        computer_box.write(f"### Computer is thinking... {flicker}")
+        computer_decision_box.write(f"### Computer is thinking... {flicker}")
         time.sleep(0.08 + i * 0.02)  # starts fast, slows down
  
     # Stop on the real answer
