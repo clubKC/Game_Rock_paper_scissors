@@ -32,6 +32,19 @@ if st.button("🎮 Play"):
     st.write("### Your choice:", player_choice)
     st.write("### Computer choice:", computer_choice)
 
+    # An empty box we can keep rewriting, like a mini screen
+    computer_decision_box = st.empty()
+ 
+    # Flip through random moves, getting slower each time
+    for i in range(20):
+        flicker = random.choice(choices)
+        computer_box.write(f"### Computer is thinking... {flicker}")
+        time.sleep(0.08 + i * 0.02)  # starts fast, slows down
+ 
+    # Stop on the real answer
+    computer_decision_box.write(f"### Computer choice: {computer_choice}")
+ 
+
     # Decide the winner
     if player_choice == computer_choice:
         st.info("🤝 It's a draw!")
