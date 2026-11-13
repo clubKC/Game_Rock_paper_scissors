@@ -1,5 +1,6 @@
 import streamlit as st
 import random
+import time
 
 # Page title
 st.title("🪨 Rock, Paper, Scissors")
@@ -36,7 +37,7 @@ if st.button("🎮 Play"):
     computer_decision_box = st.empty()
  
     # Flip through random moves, getting slower each time
-    for i in range(15):
+    for i in range(20):
         flicker = random.choice(choices)
         computer_decision_box.write(f"### Computer is thinking... {flicker}")
         time.sleep(0.08 + i * 0.02)  # starts fast, slows down
