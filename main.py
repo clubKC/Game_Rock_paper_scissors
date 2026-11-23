@@ -31,7 +31,7 @@ if st.button("🎮 Play"):
     computer_choice = random.choice(choices)
 
     st.write("### Your choice:", player_choice)
-    st.write("### Computer choice:", computer_choice)
+    #st.write("### Computer choice:", computer_choice)
 
     # An empty box we can keep rewriting, like a mini screen
     computer_decision_box = st.empty()
